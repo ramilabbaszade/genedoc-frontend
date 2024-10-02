@@ -6,9 +6,10 @@ import {
   Routes,
 } from "react-router-dom";
 import { Navbar } from './components/Navbar.tsx';
-import './index.css'
-import { Landing } from './pages/landing.tsx';
+import { Landing } from './pages/Landing.tsx';
 import { App } from './pages/App.tsx'
+import './index.css'
+import { Login } from './pages/Login.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/landing" element={<Landing />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
